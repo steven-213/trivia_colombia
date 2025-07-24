@@ -141,6 +141,7 @@ mostrarPregunta()
 			});
 
 			map.setView([lat, lon], 6);
+			document.getElementById('direccion').value = "";
 			
 		}
 

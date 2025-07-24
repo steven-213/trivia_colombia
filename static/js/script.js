@@ -175,8 +175,9 @@ function responder(correcta) {
         numeroPregunta = 0;
         if (nivel === "facil") nivel = "medio";
         else if (nivel === "medio") nivel = "dificil";
-        else {
+        else if( nivel === "dificil") {
              document.getElementById("Ganaste").style.display = "flex";
+			 return;
         }
         document.getElementById("nivel-superado").style.display = "flex";
     } else {
